@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String ↔ Array</title>
+</head>
+
+<body>
+    <script>
+        // "Thiago" <-> Array
+        // String e array se conversam
+
+        let name = "Thiago,Ribeiro"
+
+        /*
+        console.log(name[0])
+
+        for (const v of name) {
+            console.log(v)
+        }
+
+        console.log(name.length)
+        */
+
+
+        // Metodos utilitarios do array -> join() e split()
+        // Thiago Ribeiro -> ["Thiago", "Ribeiro"]
+
+        console.log(name.split(",")) // CSV
+
+        let values = [1, 2, 3, 4, 5, 10, 20]
+        console.log(values.join(" "))
+
+
+    </script>
+</body>
+
+</html>

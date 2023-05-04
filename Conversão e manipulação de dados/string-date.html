@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String ↔ Date</title>
+</head>
+
+<body>
+    <script>
+        // '04/05/2023' <-> Date
+        // Date -> Formaso ISO - Não comporta da forma que usamos (dia, mês,ano), apenas mês, dia, ano
+        // E para que transformar data em String? Quando transforma para o tipo string, voce consegue fazer contas, por exemplo, ver que dia da semana é, somar horas e etc
+        console.log(new Date("04/05/2023"))
+        console.log(new Date("2023-04-05"))
+        console.log(new Date("2023 04 05"))
+
+        console.log(new Date("2023 04 05".toString()))
+        console.log(new Date("2023 04 05".toISOString()))
+    </script>
+</body>
+
+</html>
