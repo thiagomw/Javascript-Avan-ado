@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Métodos básicos de manipulação</title>
+</head>
+
+<body>
+    <script>
+        let people = ["Thiago", "Felipe", "Ian", "Matheus", "André"]
+
+        /*
+        // Retornar ""fatias" de um array
+        console.log(people[2])
+        console.log(people[people.length - 1])
+
+        // Retornar "fatias" de um array
+        console.log(people.slice(1, 3))
+
+        // Adicionar novos elementos no array (inicio e fim)
+        people.push("Gustavo")  // Adiciona no final do array
+        people.unshift("Khaue") // Adiciona no inicio do array
+        console.log(people.pop()) // Retorna o objeto removido, pop() tem retorno. OBS: Também vale para o shift
+
+        // Remover elementos no array (inicio e fim)
+        people.shift() // Remove elementos do inicio do array
+        people.pop() // Remove elementos do fim do array
+        console.log(people)
+
+        // Remover "fatias" de um array
+        people.splice(1, 2)
+        console.log(people)
+        */
+
+        // Localizar elementos
+        let index = people.indexOf("Ian")
+        people.splice(index, 1)
+        console.log(people)
+
+    </script>
+</body>
+
+</html>
